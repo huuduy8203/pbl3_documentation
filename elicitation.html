@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements Engineering Process</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>PBL3 Documentation Group Kago</h1>
+        <h2>Requirements Engineering Process</h2>
+    </div>
+
+    <div class="content">
+        <div class="lit_rev david">
+            <h4>1. Introduction</h4>
+            <p class="lit_rev_style">
+                <div class="lit_rev_style_word">
+                    KaGo, a price comparison application, is designed to facilitate the search for the most competitive prices for products across various online platforms. In addition to online platforms, KaGo offers users valuable information on physical store locations where the searched products can be purchased, providing a comprehensive shopping assistant experience. Targeting savvy shoppers based in Japan who are keen on optimizing their online and offline shopping experiences, KaGo is developed in Swift. The application aims to revolutionize shopping by offering a seamless, user-friendly, and reliable price comparison tool tailored to the needs of its target users.
+                </div>
+            </p>
+        </div>
+
+        <div class="lit_rev haruto">
+            <h4>2. General Description</h4>
+            <p class="lit_rev_style">
+                <div class="lit_rev_style_word">The application will retrieve product information from popular online shopping sites such as Amazon, AliExpress, Google Shopping. Users can search for products, compare prices, track price changes, and locate physical stores.</div>
+            </p>
+        </div>
+    
+        <div class="lit_rev kim">
+            <h4>3. User Requirements</h4>
+            <p class="lit_rev_style">
+                <div class="lit_rev_style_word">
+                    - User’s stories:
+                    <ul>
+                        <li>As a user, I want to search for a specific product, compare prices from different online shopping sites, and view them sorted from lowest to highest, allowing me to identify the best deal easily.</li>
+                        <li>As a user, I want to click on a price and be redirected to the product page on the respective online shopping site. I also wish to view a history of my searches, enabling me to revisit the products I've searched for in the past.</li>
+                        <li>As a user, I want to view physical store information related to the product and their locations on a map, allowing me to consider buying from a physical store and locate the nearest one.</li>
+                        <li>As a user, I want to filter results by location, ensuring that the prices and stores displayed are relevant to me.</li>
+                        <li>As a user, I want to be assured that my data is secure, allowing me to use the software without privacy concerns.</li>
+                        <li>As a user, I want to receive updates on price changes for my favorite products, helping me buy them when the price drops.</li>
+                        <li>As a user, I want a user-friendly interface, facilitating easy navigation and finding what I need.</li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+
+        <div class="lit_rev gabriel">
+            <h4>4. System Requirements</h4>
+            <p class="lit_rev_style">
+                <div class="lit_rev_style_word">
+                    - Functional Requirements:
+                    <ul>
+                        <li><strong>Web Scraping Module:</strong> The system must be able to scrape product data from selected websites. This module should be flexible and allow the addition or removal of websites as required.</li>
+                        <li><strong>API:</strong> The system should integrate with APIs of various online shopping platforms to fetch real-time pricing, product details, and availability information to ensure that users receive accurate and up-to-date product comparisons</li>
+                        <li><strong>Search Functionality:</strong> The system must include a search feature where users can input the product they are looking for. The system should return a list of products from different websites, sorted by price.</li>
+                        <li><strong>Product Comparison:</strong> The system must compare the same product from different vendors based on price, seller ratings, and other relevant criteria provided by the user.</li>
+                        <li><strong>Store Locator:</strong> The system must include a store locator feature that will show the physical locations of stores selling the desired product on a map.</li>
+                        <li><strong>User Profile Management:</strong> The system should allow users to create profiles, save their favorite products, and track price changes.</li>
+                    </ul>
+                </div>
+                <div class="lit_rev_style_word">
+                    - Non-Functional Requirements:
+                    <ul>
+                        <li><strong>Usability:</strong> The system should be user-friendly with an intuitive interface. Tooltips and help sections should be included to guide new users.</li>
+                        <li><strong>Performance:</strong> The system should provide search results and price comparisons promptly. The software should be optimized for high performance even with an increasing number of users.</li>
+                        <li><strong>Security:</strong> The system must securely store and handle user data and comply with privacy regulations.</li>
+                        <li><strong>Scalability:</strong> The system should be designed to accommodate an increasing number of users and products without compromising performance.</li>
+                        <li><strong>Reliability:</strong> The system should provide accurate and up-to-date information. The availability of the software should be high, with minimal downtime.</li>
+                        <li><strong>Localization:</strong> The system should support the Japanese language and currency, and comply with Japanese e-commerce regulations.</li>
+                    </ul>
+                </div>
+                <div class="lit_rev_style_word">
+                    - Constraints:
+                    <ul>
+                        <li><strong>Legal and Ethical:</strong> The system must respect web scraping laws and regulations. It should only gather publicly available data and should respect the terms of service of the websites it scrapes.</li>
+                        <li><strong>Technological:</strong> The system should be developed using Swift. </li>
+                        <li><strong>Time:</strong> The system should be developed within a five-week timeline.</li>
+                    </ul>
+                </div>
+            </p>
+        </div>
+
+        <div class="lit_rev josie">
+            <h4>5. System Stakeholders</h4>
+            <p class="lit_rev_style">
+                <div class="lit_rev_style_word">
+                    <strong>- End Users:</strong> The individuals who will be using the app to compare prices. They are the primary stakeholders and their needs should be the top priority.
+                </div>
+                <div class="lit_rev_style_word">
+                    <strong>- Developers:</strong> The individuals or team who will be building the app. They have a stake in ensuring that the project is feasible, maintainable, and that the requirements are clear and achievable.
+                </div>
+                <div class="lit_rev_style_word">
+                    <strong>- Project Managers:</strong> Those who oversee the project's completion. They are interested in ensuring the project stays on schedule and within budget.
+                </div>
+                <div class="lit_rev_style_word">
+                    <strong>- Business Owners/Investors:</strong> If the app is being developed for profit, anyone with a financial stake in the project is a stakeholder. They will be concerned with the app's marketability and profitability.
+                </div>
+                <div class="lit_rev_style_word">
+                    <strong>- Data Providers:</strong> Online shopping platforms and physical stores providing data for comparison. They may have specific expectations or conditions regarding data usage.
+                </div>
+            </p>
+            <button onclick="window.location.href='https://forms.gle/wnKZFBeQhWcth2Cy7'" class="btn js-week survey">Click to do our survey</button>
+        </div>
+
+
+
+        <button onclick="window.location.href='./index.html'" class="btn js-week">Back</button>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <img src="https://www.jfiu.jp/assets/en/img/common/logo-ritsumei_en.png" alt="" >
+        </footer>
+
+        <p class="copyright">Powered by Group Kago</p>
+    </div>
+</body>
+</html>
+
